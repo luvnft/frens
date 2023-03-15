@@ -5,8 +5,8 @@ export default function MapContainer() {
   const [userCoord, setUserCoord] = useState([52.49, 13.38]);
 
   const getUserLocation = () => {
+    // console.log("TEST hi");
     const success = async (pos) => {
-      console.log("TEST hi");
       const crd = await pos.coords;
       setUserCoord([crd.latitude, crd.longitude]);
     };

@@ -24,11 +24,10 @@ export default function Map({ userCoord }) {
   // });
 
   useEffect(() => {
-    console.log("TEST userCoord", userCoord);
+    // console.log("TEST userCoord", userCoord);
     setViewport({
-      latitude: userCoord[0],
-      longitude: userCoord[1],
-      zoom: 14,
+      coord: [userCoord[1], userCoord[0]],
+      zoom: 2,
       bearing: 0,
       pitch: 0,
     });
@@ -43,7 +42,7 @@ export default function Map({ userCoord }) {
         position: "fixed",
         left: 0,
       }}
-      center={userCoord}
+      center={viewport.coord}
     >
       {/* <Layer type="symbol" id="marker" layout={{ "icon-image": "marker-15" }}>
         <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
