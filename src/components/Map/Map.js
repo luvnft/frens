@@ -4,7 +4,7 @@ import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const Mapbox = ReactMapboxGl({
-  accessToken: "pk.eyJ1Ijoic2FuaWFvbmxpbmUiLCJhIjoiY2w5dm1qbXR6MHpmZjN2bXl5NTM0amFobCJ9.T8zMsiXPu6nZLTBWqwYg2A",
+  accessToken: "pk.eyJ1IjoiYmxrbHV2IiwiYSI6ImNscTQ1M25xYTAzaWIyaWxrY3V2N3Q1N3oifQ.2EBlTUdWQdnxZLvVYdntqQ",
 });
 
 export default function Map({ userCoord }) {
@@ -35,7 +35,7 @@ export default function Map({ userCoord }) {
 
   return (
     <Mapbox
-      style="mapbox://styles/saniaonline/clegbtcbe002g01mscbjrx7d5"
+      style="mapbox://styles/blkluv/ckjr77h9g1xdz19oasmm4u9u3"
       containerStyle={{
         height: "105vh",
         width: "100vw",
